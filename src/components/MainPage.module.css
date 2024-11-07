@@ -1,0 +1,105 @@
+.mainContainer {
+  background-color: #000;
+  color: #fff;
+  min-height: 100vh;
+  padding: 2rem;
+  position: relative;
+}
+
+.downloadCV {
+  position: absolute;
+  top: 2rem;
+  right: 2rem;
+}
+
+.circleContainer {
+  position: relative;
+  width: 160px;
+  height: 160px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.innerCircle {
+  position: absolute;
+  width: 120px;
+  height: 120px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 50%;
+}
+
+.outerCircle {
+  position: absolute;
+  width: 140px;
+  height: 140px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 50%;
+}
+
+.rotatingContainer {
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  animation: rotate 15s linear infinite;
+}
+
+.arcs {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.arcPath {
+  fill: none;
+  stroke: #4caf50;
+  stroke-width: 1;
+  stroke-opacity: 0.3;
+}
+
+.dot {
+  fill: #ffffff;
+}
+
+.downloadText {
+  color: #4caf50;
+  font-size: 0.9rem;
+  font-family: monospace;
+  z-index: 2;
+  position: relative;
+  background: rgba(0, 0, 0, 0.5);
+  padding: 0.5rem;
+  border-radius: 4px;
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Other styles remain the same */
+.title {
+  font-size: 4rem;
+  font-weight: bold;
+  line-height: 1.2;
+  margin: 0;
+  color: #ffffff;
+}
+
+.subtitle {
+  color: #4caf50;
+  font-size: 1.5rem;
+  margin-top: 1rem;
+}
+
+.introText {
+  color: #4caf50;
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
